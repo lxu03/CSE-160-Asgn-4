@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lighted World</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="800" height="700">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p></p>
+    <p id="numdot"> XXX </p>
+    Normals <button type="button" id="normalsOnButton">ON</button>
+    <button type="button" id="normalsOffButton">OFF</button>
+    <p>
+    Light X<input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideX">
+    Light Y<input type="range" min="100" max="1000" value="1000" class="slider" id="lightSlideY">
+    Light Z<input type="range" min="-1000" max="1000" value="0" class="slider" id="lightSlideZ">
+    <p>
+    Light R<input type="range" min="0" max="100" value="100" class="slider" id="lightSlideR">
+    Light G<input type="range" min="0" max="100" value="100" class="slider" id="lightSlideG">
+    Light B<input type="range" min="0" max="100" value="100" class="slider" id="lightSlideB">
+    <p>
+    Light <button type="button" id="lightOnButton">ON</button>
+    <button type="button" id="lightOffButton">OFF</button>
+    <p>Controls: WASD, spacebar, shift for movement, QE or mouse drag for camera rotation, F to add block, G to delete</p>
+    <p>Notes to grader: None</p>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Light World.js"></script>
+  </body>
+</html>
